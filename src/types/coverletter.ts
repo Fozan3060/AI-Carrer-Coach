@@ -5,10 +5,12 @@ export interface CoverLetterFormData {
   resumeHighlights: string
   jobDescription: string
 }
-
+type content = {
+  content:string
+}
 export interface CoverLetterResponse {
   output: {
-    coverLetter: string
+    output:content[]
     suggestions?: string[]
   }
 }
