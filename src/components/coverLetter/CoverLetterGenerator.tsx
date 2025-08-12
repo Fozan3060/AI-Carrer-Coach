@@ -156,7 +156,7 @@ export function CoverLetterGenerator() {
 
       console.log("AI Response:", data)
 
-      const coverLetter = data?.output?.coverLetter
+      const coverLetter = data?.output?.output[0].content
       if (!coverLetter) {
         throw new Error("No cover letter content received from AI")
       }
